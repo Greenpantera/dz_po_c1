@@ -5,18 +5,17 @@ Console.WriteLine("Введите число b: ");
 int b = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число c: ");
 int c = int.Parse(Console.ReadLine());
+int max = a;
 if (b<a)
 {
-    Console.Write($"Максимальным числом будет {a}"); 
-    a = max;
+    max = a; 
 }
 else
 {
-   Console.Write($"Максимальным числом будет {b}"); 
-   b = max;
+   max = b;
 }
 if (c>max)
 {
-    c = max;
-    Console.Write($"Максимальным числом будет {c}"); 
+   max = c;
 }
+Console.Write($"Максимальным числом будет {max}");
